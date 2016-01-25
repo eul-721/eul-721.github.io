@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm just an ordinary dev trying to graduate with a CS degree from Simon Fraser University. I enjoy Web-dev the most, but I don't limit myself to that field. I'm also a Japanese Culture fanatic.
 
-### More Information
+### My Profile Pic
 
-A place to include any other types of information that you'd like to include about yourself.
+Google [Yuudachi].
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Best to reach me here until I get a different domain.[euleriepsilon@gmail.com](mailto:euleriepsilon@gmail.com)
