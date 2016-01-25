@@ -65,7 +65,13 @@ print(tApi.statuses.home_timeline())
 Compile your script and you should see alot of text that kinda resemble JSON. In fact, all API calls ('least the one I know) return JSON responses. You will n'eed to wrap this result in a `json_dump`:
 
 ```python
-print(json.dumps( tApi.statuses.home_timeline(),indent=4, ensure_ascii=FALSE)
+print(
+  json.dumps(
+    tApi.statuses.home_timeline(),
+    indent=4,
+    ensure_ascii=FALSE
+  )
+)
 ```
 
 Compile again. You should see a prettier JSON formatted string, but there's still too many to comprehend. You can add a `count` parameter to limit this search result.
@@ -91,6 +97,32 @@ tApi.statuses.update(
 ```
 
 Go check your Twitter page and you should see that you just made a new post!
+
+Following up to home_timeline, your file should look like the following:
+
+```python
+import json
+import configparser
+import twitter
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+tApi = Twitter(auth=OAuth(
+    config['OAUTH']['TOKEN'],
+    config['OAUTH']['TOKEN_SECRET'],
+    config['OAUTH']['CONSUMER_KEY'],
+    config['OAUTH']['CONSUMER_KEY_SECRET']
+))
+
+print(
+  json.dumps(
+    tApi.statuses.home_timeline(),
+    indent=4,
+    ensure_ascii=FALSE
+  )
+)
+```
 
 By this point, you should have a basic understanding of how this wrapper library works. If you wish to explore other available methods, visit the [library home page](http://mike.verdone.ca/twitter/) as well as [Twitter' REST API documentation](https://dev.twitter.com/rest/public)
 
