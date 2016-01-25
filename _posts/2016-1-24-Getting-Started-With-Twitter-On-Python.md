@@ -76,6 +76,7 @@ tApi.statuses.home_timeline(count=5)
 You should now see only 5 JSON objects. These are the 5 newest statuses fetched from your twitter home timeline.
 
 A similar call can be made to a *specific user's* timeline, by swapping `home_timeline` to `user_timeline`
+
 ```python
 tApi.statuses.user_timeline(screen_name="twitter")
 ```
@@ -83,6 +84,7 @@ tApi.statuses.user_timeline(screen_name="twitter")
 This will fetch `@Twitter`'s timeline.
 
 Let's try making a post to your home_timeline. Make the call
+
 ```python
 tApi.statuses.update(
     status="Getting started with Twitter from Python!")
