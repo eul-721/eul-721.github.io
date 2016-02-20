@@ -13,7 +13,7 @@ I frequent */r/webdev* and */r/javascript* alot, so coming across ***Vue.js*** w
 > Examples of those who used and appreciated Vue.js
 >
 > * [Using Vue.js for non SPA's](https://medium.com/@weblee/using-vue-js-for-non-spa-s-c2bd93f69d32#.d5o5sk9o5)
-> 
+>
 > * [Vue Js - Why another library yet we have sooo many of them](https://medium.com/steel-code/vue-js-a35e9167cefb#.7cqizyo34)
 
 Though before I dive into Vue, I should talk about my experience with Angular.js.
@@ -82,5 +82,6 @@ We can also use directives...
 Very standard data-binding...except that Vue.js provides this in merely 24.60kb compressed. It was also very easy to learn (took me roughly 10 minutes to grasp on its basic)
 
 Standard use case for this library will be
+
 * Small but quick prototypes
 * Non SOAP but templating heavy
