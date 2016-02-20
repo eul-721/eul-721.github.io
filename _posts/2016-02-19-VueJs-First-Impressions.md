@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue.js: First Impressions
+title: Vue.js -  First Impressions
 ---
 ## Background
 
